@@ -55,11 +55,17 @@ int main()
 			return c1.getRadius() < c2.getRadius();
 		});
 
+	for (auto circle : circles) {
+		cout << "R = " << circle.get().getRadius() << endl;
+	}
+
 	double sumRadii = 0;
 #pragma omp parallel for reduction(+:sumRadii)
 	for (int i = 0; i < circles.size(); i ++) {
 		sumRadii += circles[i].get().getRadius();
 	}
+
+	cout << "sum of radii is " << sumRadii;
 
 	return 0;
    

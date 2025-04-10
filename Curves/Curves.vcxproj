@@ -130,7 +130,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="CurveGenerator.cpp" />
     <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="Helix.cpp" />
     <ClCompile Include="main.cpp" />
@@ -138,7 +137,6 @@
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Curve.h" />
-    <ClInclude Include="CurveGenerator.h" />
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="Helix.h" />
   </ItemGroup>
